@@ -6,19 +6,7 @@ import {
   signInWithEmailAndPassword,
   signOut,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDXfZhi0ovpjpGLuRyV5dzT7uEFSaqGHw4",
-//   authDomain: "mycv-2cf47.firebaseapp.com",
-//   databaseURL: "https://mycv-2cf47.firebaseio.com",
-//   projectId: "mycv-2cf47",
-//   storageBucket: "mycv-2cf47.appspot.com",
-//   messagingSenderId: "987255097152",
-//   appId: "1:987255097152:web:27a651a755843bc5549ca5",
-// };
 const firebaseConfig = {
   apiKey: "AIzaSyAfITm7Ud5AD7pI_wSsVkwW2lygPrHWdwk",
   authDomain: "authentiction-project-269c5.firebaseapp.com",
@@ -29,7 +17,7 @@ const firebaseConfig = {
   measurementId: "G-S69X1BLWZC",
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 console.log("app=>", app);
 
@@ -106,9 +94,9 @@ login_btn.addEventListener("click", () => {
 logout_btn.addEventListener("click", () => {
   signOut(auth)
     .then(() => {
-      // Sign-out successful.
+      
     })
     .catch((error) => {
-      // An error happened.
+      
     });
 });
